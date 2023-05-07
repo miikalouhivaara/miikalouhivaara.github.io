@@ -56,24 +56,19 @@ const chart = new Chart(ctx, {
     options: options
 });
 
-// Function to update the chart data
 function updateChartData(newData) {
-    // Format the date and time values
     const dateTime = new Date(newData.date_time);
     const time = dateTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
     const date = dateTime.toLocaleDateString('en-US', {year: 'numeric', month: '2-digit', day: '2-digit'});
 
-    // Add new data to the chart
     chart.data.labels.push(`${date} ${time}`);
     chart.data.datasets[0].data.push(newData.light);
 
-    // Remove oldest data if chart has more than 20 entries
     if (chart.data.labels.length > 20) {
         chart.data.labels.shift();
         chart.data.datasets[0].data.shift();
     }
 
-    // Update the chart
     chart.update();
 }
 
