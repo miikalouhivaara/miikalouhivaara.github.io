@@ -1,4 +1,4 @@
-const apiUrl = 'http://webapi19sa-1.course.tamk.cloud/v1/weather/limit/50';
+const apiUrl = 'https://webapi19sa-1.course.tamk.cloud/v1/weather/limit/50';
 const formatDateTime = (date) => date.toLocaleDateString('en-US') + ' ' + date.toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric'});
 const tableConfig = {
   humidity_in: '#humidity-in-table',

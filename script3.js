@@ -56,22 +56,22 @@ const fetchLightData = async (timespan) => {
     let apiEndpoint = "";
     switch(timespan) {
       case "20":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/";
         break;
       case "24h":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/24";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/24";
         break;
       case "48h":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/48";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/48";
         break;
       case "72h":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/72";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/72";
         break;
       case "1w":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/168";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/168";
         break;
       case "1m":
-        apiEndpoint = "http://webapi19sa-1.course.tamk.cloud/v1/weather/light/720";
+        apiEndpoint = "https://webapi19sa-1.course.tamk.cloud/v1/weather/light/720";
         break;
       default:
         console.error("Invalid time span selected");
